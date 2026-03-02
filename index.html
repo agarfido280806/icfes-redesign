@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICFES - Instituto Colombiano para la Evaluación de la Educación</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts: Inter for modern, clean typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Top Gov Bar (Typical in Colombian gov sites) -->
+    <div class="gov-bar">
+        <div class="header-container">
+            <div class="gov-logo-container">
+                <img src="https://www.icfes.gov.co/wp-content/uploads/2024/09/logo-gov-co.png" alt="GOV.CO ICFES"
+                    class="gov-img-logo">
+            </div>
+            <div class="gov-lang">
+                <a href="#" class="active-lang">ES</a>
+                <span class="lang-divider">|</span>
+                <a href="#">EN</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <header id="main-header">
+        <div class="header-container header-content">
+            <div class="logo">
+                <img src="https://www.icfes.gov.co/wp-content/uploads/2024/09/LOGO_ICFES.svg" alt="ICFES Logo"
+                    class="main-img-logo">
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" class="active">Inicio</a></li>
+                    <li><a href="#">Nuestra Entidad</a></li>
+                    <li><a href="#">Evaluaciones</a></li>
+                    <li><a href="#">Investigación</a></li>
+                    <li><a href="#">Atención y servicio a la ciudadanía</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="btn-login"><i class="fa-regular fa-user"></i> Prisma / Ingresar</button>
+                <div class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge">Plataforma Oficial 2026</span>
+                <h1>¡En el ICFES trabajamos para mejorar tu experiencia!</h1>
+                <p>Accede de forma rápida, segura y organizada a todos tus procesos de evaluación. Estamos aquí para
+                    guiarte en tu camino académico y profesional.</p>
+                <div class="hero-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="¿Qué trámite estás buscando hoy?">
+                    <button class="btn-search">Buscar</button>
+                </div>
+            </div>
+
+            <!-- Primary Actions - Highly visible as requested -->
+            <div class="hero-actions-grid">
+                <a href="#" class="action-card primary-card">
+                    <div class="card-icon"><i class="fa-solid fa-file-signature"></i></div>
+                    <div class="card-text">
+                        <h3>Inscripciones</h3>
+                        <p>Regístrate para Saber 11, Saber Pro, Validantes y más pruebas.</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-right card-arrow"></i>
+                </a>
+
+                <a href="#" class="action-card secondary-card">
+                    <div class="card-icon"><i class="fa-solid fa-square-poll-vertical"></i></div>
+                    <div class="card-text">
+                        <h3>Resultados</h3>
+                        <p>Consulta tu puntaje histórico, descarga actas y constancias.</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-right card-arrow"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Grid Section (Avoids empty space, shows hierarchy) -->
+    <section class="quick-access">
+        <div class="container">
+            <div class="section-header">
+                <h2>Accesos Rápidos</h2>
+                <p>Encuentra información específica según tu perfil o necesidad</p>
+            </div>
+
+            <div class="grid-4">
+                <div class="feature-box">
+                    <div class="f-icon"><i class="fa-solid fa-school"></i></div>
+                    <h4>Colegios e Instituciones</h4>
+                    <p>Gestión de estudiantes, resultados institucionales e inscripciones masivas.</p>
+                    <a href="#">Ingresar <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+                <div class="feature-box">
+                    <div class="f-icon"><i class="fa-solid fa-calendar-check"></i></div>
+                    <h4>Calendario y Citaciones</h4>
+                    <p>Verifica cuándo y dónde debes presentar tu examen.</p>
+                    <a href="#">Consultar <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+                <div class="feature-box">
+                    <div class="f-icon"><i class="fa-solid fa-file-invoice"></i></div>
+                    <h4>Pagos y Tarifas</h4>
+                    <p>Información sobre costos, fechas de recaudo y medios de pago.</p>
+                    <a href="#">Ver tarifas <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+                <div class="feature-box">
+                    <div class="f-icon"><i class="fa-solid fa-wheelchair"></i></div>
+                    <h4>Atención a Discapacidad</h4>
+                    <p>Conoce los ajustes razonables y apoyo en la presentación de exámenes.</p>
+                    <a href="#">Más información <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <img src="https://www.icfes.gov.co/wp-content/uploads/2024/09/LOGO_ICFES.svg" alt="ICFES Logo"
+                    class="footer-img-logo">
+                <p>Instituto Colombiano para la Evaluación de la Educación.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Trámites Principales</h4>
+                <ul>
+                    <li><a href="#">Inscripciones PRISMA</a></li>
+                    <li><a href="#">Consulta de Resultados</a></li>
+                    <li><a href="#">Descarga de Citaciones</a></li>
+                    <li><a href="#">Certificados de Asistencia</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Atención al Ciudadano</h4>
+                <ul>
+                    <li><a href="#">Centro de Relevo</a></li>
+                    <li><a href="#">Peticiones, Quejas y Reclamos (PQRSF)</a></li>
+                    <li><a href="#">Transparencia</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Calle 26 N° 69-76, Torre 2, Piso 16. Edificio Elemento,
+                    Bogotá.</p>
+                <p><i class="fa-solid fa-phone"></i> Línea Nacional: 601 9156101 / 018000-519535</p>
+                <p><i class="fa-solid fa-envelope"></i> solicitudesinformacion@icfes.gov.co</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 ICFES. Todos los derechos reservados. Rediseño Conceptual.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
