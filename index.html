@@ -39,11 +39,58 @@
 
             <nav class="main-nav">
                 <ul>
-                    <li><a href="#" class="active">Inicio</a></li>
-                    <li><a href="#">Nuestra Entidad</a></li>
-                    <li><a href="#">Evaluaciones</a></li>
-                    <li><a href="#">Investigación</a></li>
-                    <li><a href="#">Atención y servicio a la ciudadanía</a></li>
+                    <li><a href="#" class="active"><i class="fa-solid fa-house" style="margin-right: 6px;"></i>
+                            Inicio</a></li>
+                    <li><a href="#"><i class="fa-solid fa-headset" style="margin-right: 6px;"></i> Atención y servicio a
+                            la ciudadanía</a></li>
+                    <li class="nav-dropdown-item">
+                        <a href="#"><i class="fa-solid fa-users" style="margin-right: 6px;"></i> Participa <i
+                                class="fa-solid fa-chevron-down" style="font-size: 0.8rem; margin-left: 4px;"></i></a>
+                        <ul class="nav-dropdown-menu">
+                            <li><a href="#">Participación para la identificación de problemas y diagnostico de
+                                    necesidades</a></li>
+                            <li><a href="#">Planeación y/o presupuesto participativo</a></li>
+                            <li><a href="#">Participación y consulta ciudadana de proyectos, normas, políticas o
+                                    programas</a></li>
+                            <li><a href="#">Colaboración e innovación abierta</a></li>
+                            <li><a href="#">Rendición de cuentas</a></li>
+                            <li><a href="#">Control social</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="fa-solid fa-building" style="margin-right: 6px;"></i> Nuestra Entidad</a>
+                    </li>
+                    <li class="nav-dropdown-item">
+                        <a href="#"><i class="fa-solid fa-file-lines" style="margin-right: 6px;"></i> Evaluaciones <i
+                                class="fa-solid fa-chevron-down" style="font-size: 0.8rem; margin-left: 4px;"></i></a>
+                        <ul class="nav-dropdown-menu">
+                            <li><a href="#">Examen Pre Saber</a></li>
+                            <li><a href="#">Examen Saber 11°</a></li>
+                            <li><a href="#">Examen Validación del Bachillerato Académico</a></li>
+                            <li><a href="#">Examen Saber TyT</a></li>
+                            <li><a href="#">Examen Saber Pro</a></li>
+                            <li><a href="#">Pruebas Saber 3°, 5°, 7° y 9°</a></li>
+                            <li><a href="#">Reconocimiento de exámenes presentados en el exterior</a></li>
+                            <li><a href="#">Otras evaluaciones</a></li>
+                            <li><a href="#">Certificados</a></li>
+                            <li><a href="#">Cronograma de Evaluaciones</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-dropdown-item">
+                        <a href="#"><i class="fa-solid fa-link" style="margin-right: 6px;"></i> Otros Links <i
+                                class="fa-solid fa-chevron-down" style="font-size: 0.8rem; margin-left: 4px;"></i></a>
+                        <ul class="nav-dropdown-menu">
+                            <li><a href="#">Normograma</a></li>
+                            <li><a href="#">Notificaciones</a></li>
+                            <li><a href="#">Consultoría</a></li>
+                            <li><a href="#">Icfes Internacional</a></li>
+                            <li><a href="#">Análisis de datos</a></li>
+                            <li><a href="#">Abc del saber</a></li>
+                            <li><a href="#">Investigaciones</a></li>
+                            <li><a href="#">Publicaciones Icfes</a></li>
+                            <li><a href="#">Noticias</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
 
@@ -71,27 +118,111 @@
                     <input type="text" placeholder="¿Qué trámite estás buscando hoy?">
                     <button class="btn-search">Buscar</button>
                 </div>
+
+                <div class="stats-row">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="1300000" data-suffix="+">0</div>
+                        <div class="stat-label">Evaluados en 2025</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="5" data-suffix="">0</div>
+                        <div class="stat-label">Tipos de pruebas</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="32" data-suffix="">0</div>
+                        <div class="stat-label">Departamentos</div>
+                    </div>
+                </div>
             </div>
 
-            <!-- Primary Actions - Highly visible as requested -->
-            <div class="hero-actions-grid">
-                <a href="#" class="action-card primary-card">
-                    <div class="card-icon"><i class="fa-solid fa-file-signature"></i></div>
-                    <div class="card-text">
-                        <h3>Inscripciones</h3>
-                        <p>Regístrate para Saber 11, Saber Pro, Validantes y más pruebas.</p>
-                    </div>
-                    <i class="fa-solid fa-arrow-right card-arrow"></i>
-                </a>
+            <!-- Primary Actions & Interactive Card -->
+            <div class="hero-right-panel">
+                <div class="hero-actions-grid">
+                    <a href="#" class="action-card primary-card">
+                        <div class="card-icon"><i class="fa-solid fa-file-signature"></i></div>
+                        <div class="card-text">
+                            <h3>Inscripciones</h3>
+                            <p>Regístrate para Saber 11, Saber Pro, Validantes y más pruebas.</p>
+                        </div>
+                        <i class="fa-solid fa-arrow-right card-arrow"></i>
+                    </a>
 
-                <a href="#" class="action-card secondary-card">
-                    <div class="card-icon"><i class="fa-solid fa-square-poll-vertical"></i></div>
-                    <div class="card-text">
-                        <h3>Resultados</h3>
-                        <p>Consulta tu puntaje histórico, descarga actas y constancias.</p>
+                    <div class="results-dropdown-container">
+                        <a href="#" class="action-card secondary-card" id="btn-show-results">
+                            <div class="card-icon"><i class="fa-solid fa-square-poll-vertical"></i></div>
+                            <div class="card-text">
+                                <h3>Resultados</h3>
+                                <p>Consulta tu puntaje histórico, descarga actas y constancias.</p>
+                            </div>
+                            <i class="fa-solid fa-chevron-down card-arrow"></i>
+                        </a>
+
+                        <ul class="results-dropdown-menu" id="results-dropdown">
+                            <li><a href="#" data-exam="Examen Pre Saber">Examen Pre Saber</a></li>
+                            <li><a href="#" data-exam="Examen Saber 11°">Examen Saber 11°</a></li>
+                            <li><a href="#" data-exam="Examen Validación del Bachillerato Académico">Examen Validación
+                                    del Bachillerato Académico</a></li>
+                            <li><a href="#" data-exam="Examen Saber TyT">Examen Saber TyT</a></li>
+                            <li><a href="#" data-exam="Examen Saber Pro">Examen Saber Pro</a></li>
+                            <li><a href="#" data-exam="Pruebas Saber 3°, 5°, 7° y 9°">Pruebas Saber 3°, 5°, 7° y 9°</a>
+                            </li>
+                        </ul>
                     </div>
-                    <i class="fa-solid fa-arrow-right card-arrow"></i>
-                </a>
+                </div>
+
+                <div class="results-mockup-card" id="results-card">
+                    <div class="rm-header">
+                        <div class="rm-icon"><i class="fa-solid fa-chart-pie"></i></div>
+                        <h3>Resultados Saber 11 — Calendario A 2026</h3>
+                    </div>
+                    <div class="rm-body">
+                        <div class="score-row">
+                            <div class="score-labels">
+                                <span class="score-title">Lectura Crítica</span>
+                                <span class="score-num" data-val="78">0</span>
+                            </div>
+                            <div class="score-bar-bg">
+                                <div class="score-bar-fill" data-width="78%"></div>
+                            </div>
+                        </div>
+                        <div class="score-row">
+                            <div class="score-labels">
+                                <span class="score-title">Matemáticas</span>
+                                <span class="score-num" data-val="85">0</span>
+                            </div>
+                            <div class="score-bar-bg">
+                                <div class="score-bar-fill" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="score-row">
+                            <div class="score-labels">
+                                <span class="score-title">Sociales</span>
+                                <span class="score-num" data-val="72">0</span>
+                            </div>
+                            <div class="score-bar-bg">
+                                <div class="score-bar-fill" data-width="72%"></div>
+                            </div>
+                        </div>
+                        <div class="score-row">
+                            <div class="score-labels">
+                                <span class="score-title">Ciencias</span>
+                                <span class="score-num" data-val="76">0</span>
+                            </div>
+                            <div class="score-bar-bg">
+                                <div class="score-bar-fill" data-width="76%"></div>
+                            </div>
+                        </div>
+                        <div class="score-row">
+                            <div class="score-labels">
+                                <span class="score-title">Inglés</span>
+                                <span class="score-num" data-val="92">0</span>
+                            </div>
+                            <div class="score-bar-bg">
+                                <div class="score-bar-fill" data-width="92%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
